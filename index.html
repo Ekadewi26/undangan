@@ -3,42 +3,273 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ahmad & Lingga</title>
+    <title>Ahmad & Lingga Wedding</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-
-    <!--SimplyCountdown-->
+    <!-- SimplyCountdown -->
     <link rel="stylesheet" href="countdown/default.min.css"/>
     <script src="countdown/simplyCountdown.js"></script>
-    <link rel="stylesheet" href ="style.css">
+    
+    <style>
+      :root {
+        --primary-color: #8e6c88;
+        --secondary-color: #f8f9fa;
+        --accent-color: #d4a5c3;
+      }
+      
+      body {
+        font-family: 'Work Sans', sans-serif;
+        background-color: #fafafa;
+        overflow-x: hidden;
+      }
+      
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        position: relative;
+      }
+      
+      .couple-name {
+        font-family: 'Sacramento', cursive;
+        font-size: 4rem;
+        color: var(--accent-color);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      
+      .btn-invitation {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-invitation:hover {
+        background-color: var(--accent-color);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      .invitation-card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      
+      .invitation-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+      
+      .date-badge {
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border-radius: 50px;
+      }
+      
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+      
+      @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+      
+      .heart-beat {
+        animation: heartBeat 1.5s ease infinite;
+      }
+      
+      @keyframes heartBeat {
+        0% { transform: scale(1); }
+        25% { transform: scale(1.1); }
+        50% { transform: scale(1); }
+        75% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+    </style>
   </head>
   <body>
-    
+    <!-- Hero Section -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main class="animate__animated animate__fadeIn">
+        <h4 class="animate__animated animate__fadeInUp animate__delay-1s">Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1 class="couple-name animate__animated animate__fadeIn animate__delay-2s">Ahmad & Lingga</h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-3s">Akan melangsungkan akad dan resepsi</p>
+        <div class="countdown my-4 animate__animated animate__zoomIn animate__delay-4s"></div>
+        <a href="#undangan" class="btn btn-lg btn-invitation mt-4 animate__animated animate__fadeInUp animate__delay-5s">
+          <i class="bi bi-chevron-double-down"></i> Lihat Undangan
+        </a>
+      </main>
+    </section>
 
+    <!-- Invitation Section -->
+    <section id="undangan" class="py-5" style="background-color: var(--secondary-color);">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center mb-5">
+            <h2 class="display-4 mb-4 animate__animated animate__fadeIn">Undangan Pernikahan</h2>
+            <div class="heart-beat">
+              <i class="bi bi-heart-fill text-danger" style="font-size: 3rem;"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center animate__animated animate__fadeInUp">
+          <div class="col-md-10">
+            <div class="invitation-card p-5">
+              <div class="text-center mb-5">
+                <h3 class="couple-name mb-4">Ahmad & Lingga</h3>
+                <p class="lead">Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Anda untuk hadir dalam acara pernikahan kami</p>
+              </div>
+              
+              <div class="row text-center">
+                <div class="col-md-6 mb-5 mb-md-0">
+                  <h4 class="mb-4">Akad Nikah</h4>
+                  <div class="date-badge d-inline-block mb-3">
+                    Sabtu, 12 Oktober 2024
+                  </div>
+                  <p>Pukul 08.00 - 10.00 WIB</p>
+                  <p>Masjid Al-Barkah<br>Jl. Kenangan Indah No. 123<br>Jakarta Selatan</p>
+                </div>
+                
+                <div class="col-md-6">
+                  <h4 class="mb-4">Resepsi</h4>
+                  <div class="date-badge d-inline-block mb-3">
+                    Sabtu, 12 Oktober 2024
+                  </div>
+                  <p>Pukul 11.00 - 15.00 WIB</p>
+                  <p>Grand Ballroom Hotel Mawar<br>Jl. Bahagia Selalu No. 456<br>Jakarta Selatan</p>
+                </div>
+              </div>
+              
+              <div class="text-center mt-5 pt-4">
+                <p class="mb-4">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+                <h5 class="mb-4">Kami yang berbahagia,</h5>
+                <h3 class="couple-name">Ahmad & Lingga</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- RSVP Section -->
+    <section class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row justify-content-center animate__animated animate__fadeIn">
+          <div class="col-md-8 text-center">
+            <h2 class="mb-4">Konfirmasi Kehadiran</h2>
+            <p class="lead mb-5">Mohon konfirmasi kehadiran Anda sebelum tanggal 1 Oktober 2024</p>
+            
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <form class="animate__animated animate__fadeInUp">
+                  <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Nama Lengkap">
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control form-control-lg" placeholder="Email">
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-select form-select-lg">
+                      <option selected>Jumlah Kehadiran</option>
+                      <option value="1">1 Orang</option>
+                      <option value="2">2 Orang</option>
+                      <option value="3">3 Orang</option>
+                      <option value="4">4 Orang</option>
+                      <option value="5">5 Orang</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control form-control-lg" rows="3" placeholder="Pesan/Ucapan"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-invitation px-5">
+                    <i class="bi bi-send-fill"></i> Kirim Konfirmasi
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center
-    text-white">
-  <main>
-    <h4> Kepada Bapak/Ibu/Saudara/i, </h4>
-    <h1> Ahmad & Lingga</h1>
-    <p> Akan melangsungkan akad dan resepsi</p>
-    <div class="countdown"></div>
-  
-    <a href ="#undangan" class="btn btn-lg mt-4"> Lihat Undangan</a>
-  </main>
-</section>
+    <!-- Footer -->
+    <footer class="py-4 text-center text-white" style="background-color: var(--primary-color);">
+      <div class="container">
+        <p class="mb-0">© 2024 Ahmad & Lingga Wedding. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
 
     <script>
-      simplyCountdown('.countdown', {});
+      simplyCountdown('.countdown', {
+        year: 2024, // required
+        month: 10, // required
+        day: 12, // required
+        hours: 8, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: { //words displayed into the countdown
+          days: { singular: 'Hari', plural: 'Hari' },
+          hours: { singular: 'Jam', plural: 'Jam' },
+          minutes: { singular: 'Menit', plural: 'Menit' },
+          seconds: { singular: 'Detik', plural: 'Detik' }
+        },
+        plural: true, //use plurals
+        inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
+        inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
+        // in case of inline set to false
+        enableUtc: false, //Use UTC or not - default : false
+        onEnd: function() { return; }, //Callback on countdown end, put your own function here
+        refresh: 1000, // default refresh every 1s
+        sectionClass: 'simply-section', //section css class
+        amountClass: 'simply-amount', // amount css class
+        wordClass: 'simply-word', // word css class
+        zeroPad: false,
+        countUp: false
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+      
+      // Animation on scroll
+      function animateOnScroll() {
+        const elements = document.querySelectorAll('.animate__animated');
+        
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if(elementPosition < screenPosition) {
+            const animationClass = element.classList[1];
+            element.classList.add(animationClass);
+          }
+        });
+      }
+      
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
     </script>
   </body>
 </html>
